@@ -32,6 +32,7 @@ async def fetch(
 
 
 def validate_date(total: int, top_advertisement: Tag) -> dict[str, Any]:
+    """new"""
     data = TotalAdvertisement(
         total=total,
         top_advertisement=[element.text for element in top_advertisement]
